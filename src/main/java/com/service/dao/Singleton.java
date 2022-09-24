@@ -19,7 +19,7 @@ public class Singleton {
 		Connection conn = null;
 		try {
 			Class.forName("org.postgresql.Driver");
-			conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/servicecandidature","ridaweb", "ridawebe");
+			conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/servicecandidature","", "");
 		}
 		catch(ClassNotFoundException ex) {
 			System.out.println("Erreur de pilote : " + ex.getMessage());
